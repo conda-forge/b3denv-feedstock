@@ -1,5 +1,5 @@
 {% set name = "b3denv" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/b3denv-{{ version }}.tar.gz
-  sha256: 536d627ef26681c1393abc41101fdf917e029c9a0e1138102c8b27bf0398401e
+  sha256: d829671c39a428633770e7a83a23a1cc2610e26f788cba93fff0c8a2f5e355f1
 
 build:
   entry_points:
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/stenson/b3denv
-  summary: Helpers for blender command-line use 
+  summary: Helpers for blender command-line use
   license: Apache-2.0
   license_file: LICENSE
 
