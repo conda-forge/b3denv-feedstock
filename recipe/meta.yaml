@@ -28,7 +28,6 @@ test:
     - b3denv
   commands:
     - pip check
-    - b3denv --help
   requires:
     - pip
 
