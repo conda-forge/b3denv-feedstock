@@ -1,5 +1,5 @@
 {% set name = "b3denv" %}
-{% set version = "0.0.18" %}
+{% set version = "0.0.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/b3denv-{{ version }}.tar.gz
-  sha256: ab453cfc14ffac969158aa8dd33c62c995b5882b4c0abb87de70400c2b9ca345
+  sha256: 2c789d57e76d32b5d5eab0f65507e2edb55bbd3daad6126c18103a220109d4d1
 
 build:
   entry_points:
