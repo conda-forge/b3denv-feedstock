@@ -12,6 +12,7 @@ source:
 build:
   entry_points:
     - b3denv = b3denv:main
+    - bdv = b3denv:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
@@ -20,7 +21,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling
   run:
     - python >={{ python_min }}
 
@@ -29,6 +30,8 @@ test:
     - b3denv
   commands:
     - pip check
+    - b3denv --help
+    - bdv --help
   requires:
     - pip
     - python {{ python_min }}
