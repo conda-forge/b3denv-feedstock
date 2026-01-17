@@ -30,8 +30,8 @@ test:
     - b3denv
   commands:
     - pip check
-    - b3denv --help
-    - bdv --help
+    - b3denv --version
+    - bdv --version
   requires:
     - pip
     - python {{ python_min }}
