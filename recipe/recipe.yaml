@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: b3denv
-  version: 0.0.21
+  version: "0.0.22"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/b3denv-${{ version }}.tar.gz
-  sha256: 6075423d5787901028bafae682d5bc37719ce44c675642f64a8b05f2fb3f887a
+  sha256: bd5e40150a92526ee2d8e3080bfc8aab089c9ffda05c0fd4e65c0fc010bebd4b
 
 build:
   number: 0
